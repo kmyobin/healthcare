@@ -2,13 +2,13 @@
   width: 269px;
   height: 51px;
   border-radius: 50px;
-  background-color: #F9B5D0;
-  border-color: #F9B5D0;
+  background-color: #9C9C9C;
+  border-color: #9C9C9C;
   font-size: 20px;
   line-height: 20px;
-  color: #FF597B;
+  color: #393939;
   margin-top: 9px;
   margin-bottom: 9px;
-  font-family: var(--font-seoulhangang);
+  font-family: 'seoulhangang';
   cursor: pointer;
 }

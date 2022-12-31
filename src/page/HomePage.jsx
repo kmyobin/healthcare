@@ -1,12 +1,12 @@
 import React from 'react'
 import HomeContainer from '../containers/home/HomeContainer'
-import Layout from '../layout/Layout'
+import LayoutHealth from '../layout/LayoutHealth'
 
 function HomePage() {
   return (
-    <Layout>
+    <LayoutHealth>
       <HomeContainer />
-    </Layout>
+    </LayoutHealth>
   )
 }
 

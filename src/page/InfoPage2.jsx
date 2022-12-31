@@ -1,12 +1,12 @@
 import React from 'react'
 import InfoConatiner2 from '../containers/info/InfoConatiner2'
-import Layout from '../layout/Layout'
+import LayoutGrade from '../layout/LayoutGrade'
 
 function InfoPage2() {
   return (
-    <Layout>
+    <LayoutGrade>
       <InfoConatiner2 />
-    </Layout>
+    </LayoutGrade>
   )
 }
 

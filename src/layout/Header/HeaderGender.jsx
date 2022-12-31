@@ -1,6 +1,6 @@
 import styles from './Header.module.css';
 
-const HeaderHealth = () => {
+const HeaderGender = () => {
   return (
     <header className={styles.header}>
       <contents className={styles.contents}>
@@ -12,7 +12,7 @@ const HeaderHealth = () => {
         <div style={{
           fontSize: "50px",  float: "left",  width:"60%",
         }}>
-          건강 영역
+          성별 영역
         </div>    
         <div style={{float: "left",  width: "20%"}}>&nbsp;&nbsp;</div>
 
@@ -22,4 +22,4 @@ const HeaderHealth = () => {
   );
 };
 
-export default HeaderHealth;
+export default HeaderGender;

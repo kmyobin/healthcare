@@ -1,12 +1,12 @@
 import React from 'react'
 import ResultContainer from '../containers/result/ResultContainer'
-import Layout from '../layout/Layout'
+import LayoutHealth from '../layout/LayoutHealth'
 
 function ResultPage() {
   return (
-    <Layout>
+    <LayoutHealth>
       <ResultContainer />
-    </Layout>
+    </LayoutHealth>
   )
 }
 

@@ -1,12 +1,12 @@
 import React from 'react'
 import InfoContainer1 from '../containers/info/InfoContainer1'
-import Layout from '../layout/Layout'
+import LayoutGender from '../layout/LayoutGender'
 
 function InfoPage1() {
   return (
-    <Layout>
+    <LayoutGender>
       <InfoContainer1 />
-    </Layout>
+    </LayoutGender>
   )
 }
 

@@ -1,6 +1,7 @@
-import styles from './Header.module.css';
+import React from 'react'
+import styles from './Header.module.css'
 
-const HeaderHealth = () => {
+function HeaderDrunk() {
   return (
     <header className={styles.header}>
       <contents className={styles.contents}>
@@ -8,11 +9,11 @@ const HeaderHealth = () => {
           2023학년도 건강능력평가 문제지
         </div>
 
-        <div style={{float: "left",  width: "20%"}}>&nbsp;&nbsp;</div>
+        <div style={{float: "left",  width: "20%"}}>5교시</div>
         <div style={{
-          fontSize: "50px",  float: "left",  width:"60%",
+          fontSize: "35px",  float: "left",  width:"60%",
         }}>
-          건강 영역
+          음주 및 흡연 영역
         </div>    
         <div style={{float: "left",  width: "20%"}}>&nbsp;&nbsp;</div>
 
@@ -20,6 +21,6 @@ const HeaderHealth = () => {
 
     </header>
   );
-};
+}
 
-export default HeaderHealth;
+export default HeaderDrunk

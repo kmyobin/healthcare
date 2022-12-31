@@ -15,7 +15,7 @@ function InfoConatiner2() {
     else{
       sessionStorage.setItem("gs", "f_e");
     }
-    navigate("/qna");
+    navigate("/eat");
   }
 
   const onClickM = () => {
@@ -27,7 +27,7 @@ function InfoConatiner2() {
     else{
       sessionStorage.setItem("gs", "f_m");
     }
-    navigate("/qna");
+    navigate("/eat");
   }
 
   const onClickH = () => {
@@ -39,7 +39,7 @@ function InfoConatiner2() {
     else{
       sessionStorage.setItem("gs", "f_h");
     }
-    navigate("/qna");
+    navigate("/eat");
   }
 
   return (

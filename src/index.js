@@ -7,9 +7,13 @@ import styled from 'styled-components';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './page/HomePage';
 import ResultPage from './page/ResultPage';
-import QNAPage from './page/QNAPage';
 import InfoPage1 from'./page/InfoPage1';
 import InfoPage2 from './page/InfoPage2';
+import EatPage from './page/EatPage';
+import LifePage from './page/LifePage';
+import SafePage from './page/SafePage';
+import InternetPage from './page/InternetPage';
+import DrunkPage from './page/DrunkPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const Style = {
@@ -26,7 +30,12 @@ root.render(
       <Style.Wrapper>
         <Routes>
           <Route path="/" element={ <HomePage />}/> 
-          <Route path="/qna" element={ <QNAPage />} />
+          <Route path="/eat" element={ <EatPage />} />
+          <Route path="/life" element={<LifePage />} />
+          <Route path="/safe" element={<SafePage />} />
+          <Route path="/internet" element={<InternetPage />} />
+          <Route path='/drunk' element={<DrunkPage />} />
+
           <Route path="/info1" element= { <InfoPage1 /> }/>
           <Route path="/info2" element={<InfoPage2 />} />
           <Route path="/result" element={ <ResultPage />} />

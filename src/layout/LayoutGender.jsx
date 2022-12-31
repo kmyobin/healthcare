@@ -1,14 +1,14 @@
 import React from 'react'
-import HeaderHealth from './Header/HeaderHealth';
+import HeaderGender from './Header/HeaderGender';
 import styles from './Layout.module.css';
 
-function Layout(props) {
+function LayoutGender(props) {
   return (
     <div className={styles.layout}>
-      <HeaderHealth />
+      <HeaderGender />
       <main className={styles.main}> {props.children} </main>
     </div>
   )
 }
 
-export default Layout
+export default LayoutGender
