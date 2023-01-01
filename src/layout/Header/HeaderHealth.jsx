@@ -8,13 +8,13 @@ const HeaderHealth = () => {
           2023학년도 건강능력평가 문제지
         </div>
 
-        <div style={{float: "left",  width: "20%"}}>&nbsp;&nbsp;</div>
+        <div style={{float: "left",  width: "20%", height: "80px"}}>&nbsp;&nbsp;</div>
         <div style={{
-          fontSize: "50px",  float: "left",  width:"60%",
+          fontSize: "50px",  float: "left",  width:"60%", height: "80px"
         }}>
           건강 영역
         </div>    
-        <div style={{float: "left",  width: "20%"}}>&nbsp;&nbsp;</div>
+        <div style={{float: "left",  width: "20%" , height: "80px"}}>&nbsp;&nbsp;</div>
 
       </contents>
 

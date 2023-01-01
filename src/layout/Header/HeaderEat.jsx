@@ -7,14 +7,42 @@ const HeaderEat = () => {
         <div style={{ fontSize: "24px", paddingBottom: "25px",  paddingTop: "20px"}}>
           2023학년도 건강능력평가 문제지
         </div>
-
-        <div style={{float: "left",  width: "20%"}}>1교시</div>
+        <div style={{float: "left",  width: "20%",height: "80px"}}>
+          <div style={{height: "30px"}}>
+          </div>
+          <div style={{height: "30px"}}>
+            1교시
+          </div> 
+        </div>
         <div style={{
-          fontSize: "50px",  float: "left",  width:"60%",
+          fontSize: "50px",  float: "left",  width:"60%", height: "80px"
         }}>
           식습관 영역
         </div>    
-        <div style={{float: "left",  width: "20%"}}>&nbsp;&nbsp;</div>
+        <div style={{
+          float: "left",  width: "20%", height: "80px", 
+          fontSize: "14px", 
+        }}>
+          <div style={{height: "30px"}}>
+          </div>
+          <div style={{height: "30px",  paddingRight: "5px"}}>
+            <table style={{
+              width: "100%",
+              border: "1px solid #444444",
+              borderCollapse: "collapse",
+            }}>
+              <tr>
+                <th style={{
+                  border: "1px solid #444444",
+                }}>성명</th>
+                <th style={{
+                  border: "1px solid #444444",
+                }}>{sessionStorage.getItem("name")}</th>
+              </tr>
+            </table>            
+          </div>
+
+        </div>
 
       </contents>
 
