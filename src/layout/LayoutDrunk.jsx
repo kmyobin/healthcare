@@ -1,6 +1,7 @@
 import React from 'react'
 import HeaderDrunk from './Header/HeaderDrunk';
 import styles from './Layout.module.css';
+import { motion } from 'framer-motion';
 
 function LayoutDrunk(props) {
   return (
