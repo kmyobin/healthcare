@@ -76,7 +76,7 @@ function InternetContainer( { isShow }) {
             fontFamily : "var(--font-seoulhangang)",
             fontSize: "30px",
             margin: "10px",
-          }}>{Parser(contents[questionNum].q)}</div>
+          }}>{questionNum+1}. {Parser(contents[questionNum].q)}</div>
           <br /> <br />
           {contents[questionNum].answers.map((answer, i)=> (
             <button 

@@ -5,10 +5,10 @@ const questionBoxLife =[
     pm: 1,
     answers:[
       {
-        text: "한다",        
+        text: "① 한다",        
       },
       {
-        text: "안한다",
+        text: "② 안한다",
       },
     ]
   },
@@ -18,10 +18,10 @@ const questionBoxLife =[
     pm: -1,
     answers:[
       {
-        text: "한다",        
+        text: "① 한다",        
       },
       {
-        text: "안한다",
+        text: "② 안한다",
       },
     ]
   },
@@ -31,10 +31,10 @@ const questionBoxLife =[
     pm: -1,
     answers:[
       {
-        text: "있다",        
+        text: "① 있다",        
       },
       {
-        text: "없다",
+        text: "② 없다",
       },
     ]
   },
@@ -44,10 +44,10 @@ const questionBoxLife =[
     pm: 1,
     answers:[
       {
-        text: "쉽다",        
+        text: "① 쉽다",        
       },
       {
-        text: "어렵다",
+        text: "② 어렵다",
       },
     ]
   },

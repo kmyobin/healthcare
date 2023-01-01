@@ -5,10 +5,10 @@ const questionBoxInternet =[
     pm: -1,
     answers:[
       {
-        text: "한다",        
+        text: "① 한다",        
       },
       {
-        text: "안한다",
+        text: "② 안한다",
       },
     ]
   },
@@ -18,10 +18,10 @@ const questionBoxInternet =[
     pm: -1,
     answers:[
       {
-        text: "한다",        
+        text: "① 한다",        
       },
       {
-        text: "안한다",
+        text: "② 안한다",
       },
     ]
   },
@@ -31,10 +31,10 @@ const questionBoxInternet =[
     pm: -1,
     answers:[
       {
-        text: "해본 적 있다",        
+        text: "① 해본 적 있다",        
       },
       {
-        text: "해본 적 없다",
+        text: "② 해본 적 없다",
       },
     ]
   },

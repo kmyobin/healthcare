@@ -5,10 +5,10 @@ const questionBoxDrunk =[
     pm: -1,
     answers:[
       {
-        text: "있다",        
+        text: "① 있다",        
       },
       {
-        text: "없다",
+        text: "② 없다",
       },
     ]
   },
@@ -18,10 +18,10 @@ const questionBoxDrunk =[
     pm: -1,
     answers:[
       {
-        text: "있다",        
+        text: "① 있다",        
       },
       {
-        text: "없다",
+        text: "② 없다",
       },
     ]
   },
@@ -31,10 +31,10 @@ const questionBoxDrunk =[
     pm: -1,
     answers:[
       {
-        text: "있다",        
+        text: "① 있다",        
       },
       {
-        text: "없다",
+        text: "② 없다",
       },
     ]
   }
