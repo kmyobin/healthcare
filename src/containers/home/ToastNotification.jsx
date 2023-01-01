@@ -13,7 +13,7 @@ function ToastNotification(props) {
 
   return (
     <div>
-      <p>이름을 입력하세요.</p>
+      <p>{props.toastMessage}</p>
     </div>
   )
 }

@@ -17,11 +17,17 @@ function HomeContainer() {
   const navigate = useNavigate();
   const [username, setUsername]  = useState("");
   const [toastState, setToastState] = useState(false);
+  const [toastMessage, setToastMessage] = useState("");
 
   const handleSubmit =(e)=>{
     e.preventDefault();
 
     if(username.length ===  0){
+      setToastMessage("이름을 입력하세요.");
+      setToastState(true);
+    }
+    else if(username.length >= 5){
+      setToastMessage("이름은 최대 4글자까지 가능합니다.")
       setToastState(true);
     }
     else{
@@ -68,7 +74,7 @@ function HomeContainer() {
         </form>
 
         {toastState===true?(
-          <ToastNotification setToastState={setToastState} />  
+          <ToastNotification setToastState={setToastState} toastMessage={toastMessage}/>  
         ) : null}
       </div>
     </div>

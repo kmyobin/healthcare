@@ -9,25 +9,28 @@ function HeaderInternet() {
           2023학년도 건강능력평가 문제지
         </div>
 
-        <div style={{float: "left",  width: "20%", height: "80px"}}>
+        <div style={{float: "left",  width: "18.5%",height: "80px", paddingLeft: "5px"}}>
           <div style={{height: "30px"}}>
           </div>
-          <div style={{height: "30px"}}>
+          <div style={{height: "20px", borderRadius: "25px", border: "1px solid #555555", 
+          display: "flex", alignItems: "center", justifyContent: 'center', 
+          }}>
             4교시
           </div> 
         </div>
+
         <div style={{
           fontSize: "50px",  float: "left",  width:"60%", height: "80px", justifyContent: "center",
         }}>
           인터넷 영역
         </div>    
         <div style={{
-          float: "left",  width: "20%", height: "80px", 
-          fontSize: "14px", 
+          float: "left",  width: "18.5%", height: "80px", 
+          fontSize: "14px", paddingRight: "5px"
         }}>
           <div style={{height: "30px"}}>
           </div>
-          <div style={{height: "30px", paddingRight: "5px", }}>
+          <div style={{height: "30px", }}>
             <table style={{
               width: "100%",
               border: "1px solid #444444",
