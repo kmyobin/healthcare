@@ -5,4 +5,4 @@
   <li>Front : <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"/></li>
   <li>Back : <img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"></li>
 </ul>
-피그마 링크 : https://www.figma.com/file/qY506RjIQMBP8WRpvrHz9U/%EC%B0%B0%EB%96%A1%EC%BD%A9%EB%96%A1%ED%95%B4%EC%BB%A4%ED%86%A4?node-id=0%3A1&t=2tuFYMh9Ajjflye4-0
+피그마 링크 : <a href="https://www.figma.com/file/qY506RjIQMBP8WRpvrHz9U/%EC%B0%B0%EB%96%A1%EC%BD%A9%EB%96%A1%ED%95%B4%EC%BB%A4%ED%86%A4?node-id=0%3A1&t=2tuFYMh9Ajjflye4-0">건강능력평가</a>
