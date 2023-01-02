@@ -1,6 +1,6 @@
 import styles from './Header.module.css';
 
-const HeaderHealth = () => {
+const HeaderHealth = (props) => {
   return (
     <header className={styles.header}>
       <contents className={styles.contents}>
@@ -12,7 +12,7 @@ const HeaderHealth = () => {
         <div style={{
           fontSize: "50px",  float: "left",  width:"60%", height: "80px"
         }}>
-          건강 영역
+          {props.area}
         </div>    
         <div style={{float: "left",  width: "20%" , height: "80px"}}>&nbsp;&nbsp;</div>
 

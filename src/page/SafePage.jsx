@@ -10,6 +10,7 @@ function SafePage() {
     initial={{opacity: 0}}
     animate={{opacity: 1}}
     exit={{opacity: 0}}
+    transition={{delay: 0.5}}
   >
     <LayoutSafe>
       <QNAConatiner next="/internet" questionNum={contents.length} contents={contents} />

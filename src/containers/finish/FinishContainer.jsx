@@ -26,16 +26,16 @@ function FinishContainer(props) {
 
   return (
     <Wrapper >
-    <Container style={{
-      fontFamily: 'var(--font-seoulhangang',
-    }}>
-      테스트 완료!            
-    <br/> <br />
-    
-    <button className="button" onClick={onClickResultBtn}>결과 확인하기✅</button>
-
-    </Container>
-</Wrapper >
+      <Container style={{
+        fontFamily: 'var(--font-seoulhangang',
+      }}>
+        테스트 완료!            
+      <br/> <br />
+      <button className="button" onClick={onClickResultBtn}>
+        결과 확인하기✅
+      </button>
+      </Container>
+    </Wrapper >
   )
 }
 

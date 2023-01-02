@@ -1,14 +1,15 @@
 import React from 'react'
+import Header from './Header/Header';
 import HeaderHealth from './Header/HeaderHealth';
-import styles from './Layout.module.css';
+import styles from "./Layout.module.css";
 
-function LayoutHealth(props) {
+function LayoutResult(props) {
   return (
     <div className={styles.layout}>
-      <HeaderHealth area="건강 영역"/>
+      <HeaderHealth area="성적 통지표" />
       <main className={styles.main}> {props.children} </main>
     </div>
   )
 }
 
-export default LayoutHealth
+export default LayoutResult
