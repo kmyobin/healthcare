@@ -73,7 +73,7 @@ function QNAConatiner(props) {
           <Container>
             <div style={{
               fontFamily : "var(--font-seoulhangang)",
-              fontSize: "30px",
+              fontSize: "20px",
               margin: "10px",
             }}>{questionNum+1}. {Parser(contents[questionNum].q)}</div>
             <br /> <br />
