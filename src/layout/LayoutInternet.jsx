@@ -1,11 +1,13 @@
 import React from 'react'
-import HeaderInternet from './Header/HeaderInternet';
+import Header from './Header/Header';
 import styles from './Layout.module.css';
 
 function LayoutInternet(props) {
   return (
     <div className={styles.layout}>
-      <HeaderInternet />
+      <Header period="4교시"
+      name={sessionStorage.getItem("name")}
+      area="인터넷 영역" />
       <main className={styles.main}> {props.children} </main>
     </div>
   )

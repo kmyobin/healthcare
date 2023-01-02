@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Header.module.css'
 
-function HeaderDrunk() {
+function Header(props) {
   return (
     <header className={styles.header}>
       <contents className={styles.contents}>
@@ -14,13 +14,13 @@ function HeaderDrunk() {
           <div style={{height: "20px", borderRadius: "25px", border: "1px solid #555555", 
           display: "flex", alignItems: "center", justifyContent: 'center', 
           }}>
-            5교시
+            {props.period}
           </div> 
         </div>
         <div style={{
           fontSize: "50px",  float: "left",  width:"60%", height: "80px"
         }}>
-          금지 영역
+          {props.area}
         </div>    
         <div style={{
           float: "left",  width: "18.5%", height: "80px", 
@@ -40,7 +40,7 @@ function HeaderDrunk() {
                 }}>성명</th>
                 <th style={{
                   border: "1px solid #444444",
-                }}>{sessionStorage.getItem("name")}</th>
+                }}>{props.name}</th>
               </tr>
             </table>            
           </div>
@@ -52,4 +52,4 @@ function HeaderDrunk() {
   );
 }
 
-export default HeaderDrunk
+export default Header

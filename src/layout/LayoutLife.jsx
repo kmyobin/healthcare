@@ -1,11 +1,13 @@
 import React from 'react'
-import HeaderLife from './Header/HeaderLife';
+import Header from './Header/Header';
 import styles from './Layout.module.css';
 
 function LayoutLife(props) {
   return (
     <div className={styles.layout}>
-      <HeaderLife />
+      <Header period="2교시"
+      name={sessionStorage.getItem("name")}
+      area="생활 영역" />
       <main className={styles.main}> {props.children} </main>
     </div>
   )
