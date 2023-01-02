@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import style from "./Home.module.css"
+import "../container.css"
 import { useNavigate } from 'react-router-dom';
 import  styled  from "styled-components";
 import ToastNotification from './ToastNotification';
@@ -68,7 +68,7 @@ function HomeContainer() {
             value={username}
             onChange={handleChange}
           />
-          <button className={style.button} type="submit">
+          <button className="button" type="submit">
             시작하기
           </button>
         </form>

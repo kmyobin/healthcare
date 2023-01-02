@@ -8,7 +8,7 @@ const questionBoxSafe =[
         text: "① 한다",        
       },
       {
-        text: "안한다",
+        text: "② 안한다",
       },
     ]
   },
@@ -21,7 +21,7 @@ const questionBoxSafe =[
         text: "① 한다",        
       },
       {
-        text: "안한다",
+        text: "② 안한다",
       },
     ]
   },

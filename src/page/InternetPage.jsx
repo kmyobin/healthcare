@@ -1,7 +1,8 @@
 import React from 'react'
-import InternetContainer from '../containers/QNA/InternetContainer'
+import contents from "../questionBox/questionBoxInternet"
 import LayoutInternet from '../layout/LayoutInternet'
 import { motion } from 'framer-motion'
+import QNAConatiner from '../containers/QNA/QNAContainer'
 
 function InternetPage() {
   return (
@@ -11,7 +12,7 @@ function InternetPage() {
     exit={{opacity: 0}}
   >
     <LayoutInternet>
-      <InternetContainer />
+      <QNAConatiner next="/drunk" questionNum={contents.length} contents={contents} />
     </LayoutInternet>
     </motion.div>
   )

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
 import { Link, useNavigate } from 'react-router-dom';
-import style from "./Info.module.css";
+import "../container.css"
 
 /* 성별 입력 받기 */
 function InfoContainer1() {
@@ -24,11 +24,11 @@ function InfoContainer1() {
             나의 성별은 ?            
           </div>
           <br />
-          <button className={style.button} onClick={onClickMale}>
+          <button className="button" onClick={onClickMale}>
             남자
           </button>
           <br />
-          <button className={style.button} onClick={onClickFemale}>
+          <button className="button" onClick={onClickFemale}>
             여자
           </button>
       </div>

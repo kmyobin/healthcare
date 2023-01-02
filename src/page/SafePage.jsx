@@ -1,6 +1,7 @@
 import React from 'react'
 import LayoutSafe from '../layout/LayoutSafe'
-import SafeContainer from '../containers/QNA/SafeContainer'
+import QNAConatiner from '../containers/QNA/QNAContainer'
+import contents from "../questionBox/questionBoxSafe"
 import { motion } from 'framer-motion'
 
 function SafePage() {
@@ -11,7 +12,7 @@ function SafePage() {
     exit={{opacity: 0}}
   >
     <LayoutSafe>
-      <SafeContainer />
+      <QNAConatiner next="/internet" questionNum={contents.length} contents={contents} />
     </LayoutSafe>
     </motion.div>
   )

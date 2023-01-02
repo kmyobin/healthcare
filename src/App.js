@@ -14,6 +14,7 @@ import DrunkPage from './page/DrunkPage';
 import "./App.css"
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import { AnimatePresence } from 'framer-motion';
+import FinishPage from './page/FinishPage';
 
 const Style = {
   Wrapper: styled.div`
@@ -36,10 +37,10 @@ function App() {
                     <Route path="/safe" element={<SafePage />} />
                     <Route path="/internet" element={<InternetPage />} />
                     <Route path='/drunk' element={<DrunkPage />} />
-
                     <Route path="/info1" element= { <InfoPage1 /> }/>
                     <Route path="/info2" element={<InfoPage2 />} />
                     <Route path="/result" element={ <ResultPage />} />
+                    <Route path="/finish" element={<FinishPage />} />
                   </Routes>             
         </Style.Wrapper>            
 

@@ -1,7 +1,8 @@
 import React from 'react'
 import LayoutLife from '../layout/LayoutLife'
-import LifeContainer from '../containers/QNA/LifeContainer'
+import contents from "../questionBox/questionBoxLife"
 import { motion } from 'framer-motion'
+import QNAConatiner from '../containers/QNA/QNAContainer'
 
 function LifePage() {
   return (
@@ -11,7 +12,7 @@ function LifePage() {
     exit={{opacity: 0}}
   >
     <LayoutLife>
-      <LifeContainer />
+      <QNAConatiner next="/safe" questionNum={contents.length} contents={contents}/>
     </LayoutLife>
     </motion.div>
   )

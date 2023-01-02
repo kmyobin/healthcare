@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
-import style from "./Info.module.css"
+import "../container.css"
 
 /* 초/중/고 입력받기 */
 function InfoConatiner2() {
@@ -51,15 +51,15 @@ function InfoConatiner2() {
             나는 지금 ...           
           </div>
         <br />        <br />        <br />        <br />
-        <button className={style.button} onClick={onClickE}>
+        <button className="button" onClick={onClickE}>
           초등학생
         </button>
         <br />
-        <button className={style.button} onClick={onClickM}>
+        <button className="button" onClick={onClickM}>
           중학생
         </button>
         <br />
-        <button className={style.button} onClick={onClickH}>
+        <button className="button" onClick={onClickH}>
           고등학생
         </button>
       </div>
