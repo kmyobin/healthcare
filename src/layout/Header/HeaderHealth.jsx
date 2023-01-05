@@ -1,23 +1,25 @@
-import styles from './Header.module.css';
+import styles from "./Header.module.css";
 
 const HeaderHealth = (props) => {
   return (
     <header className={styles.header}>
       <contents className={styles.contents}>
-        <div style={{ fontSize: "24px", paddingBottom: "25px",  paddingTop: "20px"}}>
-          2023학년도 건강능력평가 문제지
+        <div className={styles.contents1}>2023학년도 건강능력평가 문제지</div>
+        <div className={styles.contents2}>
+          {/* 교시 */}
+          <div className={styles.box1}>
+            <div>&nbsp;</div>
+          </div>
+
+          {/* 영역 */}
+          <div className={styles.box2}>{props.area}</div>
+
+          {/* 성명 */}
+          <div className={styles.box3}>
+            <div>&nbsp;</div>
+          </div>
         </div>
-
-        <div style={{float: "left",  width: "20%", height: "80px"}}>&nbsp;&nbsp;</div>
-        <div style={{
-          fontSize: "50px",  float: "left",  width:"60%", height: "80px"
-        }}>
-          {props.area}
-        </div>    
-        <div style={{float: "left",  width: "20%" , height: "80px"}}>&nbsp;&nbsp;</div>
-
       </contents>
-
     </header>
   );
 };
