@@ -1,5 +1,6 @@
 import React from "react";
-import style from "../container.css";
+import { Table } from "react-bootstrap";
+import "../container.css";
 
 function TableContainer() {
   let now = new Date();
@@ -16,8 +17,14 @@ function TableContainer() {
     >
       {/* 행 : 6, 열 : 6 */}
       {/* 표준점수 = (자신의 원점수 - 자신이 속한 집단의 평균) / 표준편차 */}
-      <table className={style.table} striped="columns">
-        <thead>
+      <Table
+        bordered
+        style={{
+          border: "1px solid gray",
+          width: "95%",
+        }}
+      >
+        <tbody>
           <tr>
             <th>수험번호</th>
             <th colSpan={2}>성명</th>
@@ -25,8 +32,7 @@ function TableContainer() {
             <th colSpan={2}>성별</th>
             {/*<th>출신고교</th>*/}
           </tr>
-        </thead>
-        <tbody>
+
           <tr>
             <td>12345678</td>
             <td colSpan={2}>김효빈</td>
@@ -67,7 +73,7 @@ function TableContainer() {
             <td>5</td>
           </tr>
         </tbody>
-      </table>
+      </Table>
       <div
         style={{
           paddingTop: "5px",
