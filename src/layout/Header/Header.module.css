@@ -51,4 +51,5 @@
 .th{
   border-collapse: collapse;
   border: 1px solid #444444;
+  padding: 0px 3px 0px 3px;
 }

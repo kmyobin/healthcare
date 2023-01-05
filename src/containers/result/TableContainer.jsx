@@ -1,3 +1,4 @@
+import moment from "moment/moment";
 import React from "react";
 import { Table } from "react-bootstrap";
 import "../container.css";
@@ -8,11 +9,31 @@ function TableContainer() {
   let month = now.getMonth() + 1;
   let date = now.getDate();
 
+  /* 수험번호 */
+  const nowTime = moment().format("YYYYMMDD");
+
+  var name, school, gender;
+  name = sessionStorage.getItem("name");
+  if (sessionStorage.getItem("school") === "e") {
+    school = "초등학생";
+  } else if (sessionStorage.getItem("school") === "m") {
+    school = "중학생";
+  } else {
+    school = "고등학생";
+  }
+  if (sessionStorage.getItem("gender") === "male") {
+    gender = "남자";
+  } else {
+    gender = "여자";
+  }
+
   return (
     <div
       style={{
         paddingBottom: "10px",
         borderBottom: "1.5px solid #555555",
+        marginLeft: "5px",
+        marginRight: "5px",
       }}
     >
       {/* 행 : 6, 열 : 6 */}
@@ -21,23 +42,25 @@ function TableContainer() {
         bordered
         style={{
           border: "1px solid gray",
-          width: "95%",
+          textAlign: "center",
+          verticalAlign: "middle",
         }}
       >
-        <tbody>
+        <thead>
           <tr>
             <th>수험번호</th>
             <th colSpan={2}>성명</th>
-            <th>생년월일</th>
-            <th colSpan={2}>성별</th>
+            <th colSpan={2}>교육과정</th>
+            <th>성별</th>
             {/*<th>출신고교</th>*/}
           </tr>
-
+        </thead>
+        <tbody>
           <tr>
-            <td>12345678</td>
-            <td colSpan={2}>김효빈</td>
-            <td>01.05.16</td>
-            <td colSpan={2}>여</td>
+            <td>{nowTime}</td>
+            <td colSpan={2}>{name}</td>
+            <td colSpan={2}>{school}</td>
+            <td>{gender}</td>
             {/*<td>남성여자고등학교</td>*/}
           </tr>
           <tr>

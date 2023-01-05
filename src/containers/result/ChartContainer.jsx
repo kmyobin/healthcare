@@ -19,7 +19,7 @@ function ChartContainer() {
         display: "flex",
       }}
     >
-      <ResponsiveContainer aspect={1}>
+      <ResponsiveContainer aspect={2}>
         <RadarChart outerRadius="80%" data={contents}>
           <PolarGrid stroke="black" />
           {/* PolarAngleAxis : 영역 */}
