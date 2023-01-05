@@ -21,8 +21,8 @@ table {
 
 table, td, th {
   border-collapse : collapse;
-  border : 1.5px solid gray;
+  border :1.5px solid gray;
   padding: 3px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 };
