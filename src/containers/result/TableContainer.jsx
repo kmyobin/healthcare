@@ -3,7 +3,7 @@ import React from "react";
 import { Table } from "react-bootstrap";
 import "../container.css";
 
-function TableContainer() {
+function TableContainer(props) {
   let now = new Date();
   let year = now.getFullYear();
   let month = now.getMonth() + 1;
@@ -25,27 +25,6 @@ function TableContainer() {
     gender = "남자";
   } else {
     gender = "여자";
-  }
-
-  var arr = [
-    sessionStorage.getItem("eat"),
-    sessionStorage.getItem("life"),
-    sessionStorage.getItem("safe"),
-    sessionStorage.getItem("drunk"),
-    sessionStorage.getItem("internet"),
-  ];
-
-  var grades = [];
-  for (var i = 0; i < arr.length; i++) {
-    if (arr[i] >= 89) {
-      grades[i] = 1;
-    } else if (arr[i] >= 60) {
-      grades[i] = 2;
-    } else if (arr[i] >= 23) {
-      grades[i] = 3;
-    } else {
-      grades[i] = 4;
-    }
   }
 
   return (
@@ -92,15 +71,13 @@ function TableContainer() {
           </tr>
           <tr>
             <th>백분위</th>
-            <td>{parseInt(sessionStorage.getItem("eat"))}</td>
-            <td>{parseInt(sessionStorage.getItem("life"))}</td>
-            <td>{parseInt(sessionStorage.getItem("safe"))}</td>
-            <td>{parseInt(sessionStorage.getItem("drunk"))}</td>
-            <td>{parseInt(sessionStorage.getItem("internet"))}</td>
+            {props.data.map((value) => {
+              return <td>{value}</td>;
+            })}
           </tr>
           <tr>
             <th>등급</th>
-            {grades.map((grade) => {
+            {props.grades.map((grade) => {
               return <td>{grade}</td>;
             })}
           </tr>
