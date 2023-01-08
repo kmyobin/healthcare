@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import "../container.css";
 import Parser from "html-react-parser";
 import axios from "axios";
+import { motion } from "framer-motion";
 
 const Wrapper = styled.div`
   /*display: ${(props) => (props.isShow === true ? "flex" : "none")}; */
@@ -145,38 +146,48 @@ function QNAConatiner(props) {
     return (
       <Wrapper>
         <Container>
-          <div
-            style={{
-              fontFamily: "var(--font-seoulhangang)",
-              fontSize: "20px",
-              margin: "10px",
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.5,
+              ease: [0, 0.71, 0.2, 1.01],
             }}
           >
-            {questionNum + 1}. {Parser(contents[questionNum].q)}
-          </div>
-          <img
-            src={contents[questionNum].image}
-            alt=""
-            style={{
-              width: "80%",
-              maxHeight: "300px",
-            }}
-          />
-          <br /> <br />
-          {contents[questionNum].answers.map((answer, i) => (
-            <button
+            <div
               style={{
-                color: "black",
+                fontFamily: "var(--font-seoulhangang)",
+                fontSize: "20px",
+                margin: "10px",
               }}
-              key={i}
-              idx={i}
-              className="button"
-              value={i}
-              onClick={onConditionChange}
             >
-              {Parser(answer.text)}
-            </button>
-          ))}
+              {questionNum + 1}. {Parser(contents[questionNum].q)}
+            </div>
+            <img
+              src={contents[questionNum].image}
+              alt=""
+              style={{
+                width: "80%",
+                maxHeight: "300px",
+              }}
+            />
+            <br /> <br />
+            {contents[questionNum].answers.map((answer, i) => (
+              <button
+                style={{
+                  color: "black",
+                }}
+                key={i}
+                idx={i}
+                className="button"
+                value={i}
+                onClick={onConditionChange}
+              >
+                {Parser(answer.text)}
+              </button>
+            ))}{" "}
+          </motion.div>
         </Container>
       </Wrapper>
     );

@@ -1,12 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import Table from "react-bootstrap/Table";
 import ChartContainer from "./ChartContainer";
 import TableContainer from "./TableContainer";
 import "bootstrap/dist/css/bootstrap.css";
-import { Button } from "bootstrap";
 import { useNavigate } from "react-router-dom";
-import ShareContainer from "./ShareContainer";
+import { motion } from "framer-motion";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -58,33 +56,43 @@ function ResultContainer() {
   }
 
   return (
-    <Wrapper>
-      <Container
-        style={{
-          fontFamily: "seoulhangang",
-          fontSize: "14px",
-        }}
-      >
-        {/* 성적표 출력 */}
-        <TableContainer data={arr} grades={grades} />
-        {/* 스탯 그래프 출력 */}
-        <ChartContainer data={arr} />
-
-        {/* 버튼 */}
-        {/*<ShareContainer />*/}
-
-        <br />
-        <br />
-        <button
-          className="button"
-          onClick={() => {
-            navigate("/");
+    <motion.div
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration: 0.8,
+        delay: 0.5,
+        ease: [0, 0.71, 0.2, 1.01],
+      }}
+    >
+      <Wrapper>
+        <Container
+          style={{
+            fontFamily: "seoulhangang",
+            fontSize: "14px",
           }}
         >
-          다시하기
-        </button>
-      </Container>
-    </Wrapper>
+          {/* 성적표 출력 */}
+          <TableContainer data={arr} grades={grades} />
+          {/* 스탯 그래프 출력 */}
+          <ChartContainer data={arr} />
+
+          {/* 버튼 */}
+          {/*<ShareContainer />*/}
+
+          <br />
+          <br />
+          <button
+            className="button"
+            onClick={() => {
+              navigate("/");
+            }}
+          >
+            다시하기
+          </button>
+        </Container>
+      </Wrapper>
+    </motion.div>
   );
 }
 
