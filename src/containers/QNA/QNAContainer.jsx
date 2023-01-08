@@ -61,7 +61,7 @@ function QNAConatiner(props) {
           }
 
           // 점수 산출
-          var score; //var method;
+          var score;
           if (key === "0") {
             // 긍정 (1번)
             if (contents[questionNum].pm < 0) {
@@ -106,9 +106,10 @@ function QNAConatiner(props) {
     console.log("최대 점수 : " + maximum);
     console.log("최소 점수 : " + minimum);
     var sum = maximum - minimum;
-    var grade = 100 - ((result - minimum) / sum) * 100;
+    //var grade = 100 - ((result - minimum) / sum) * 100;
+    var grade = ((result - minimum) / sum) * 100;
     console.log("백분위 : " + grade);
-    sessionStorage.setItem(props.period, grade);
+    sessionStorage.setItem(props.period, grade); // 저장
     if (props.time === 5) {
       navigate(props.next);
     } else {

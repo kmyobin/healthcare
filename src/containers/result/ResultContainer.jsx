@@ -5,6 +5,7 @@ import ChartContainer from "./ChartContainer";
 import TableContainer from "./TableContainer";
 import "bootstrap/dist/css/bootstrap.css";
 import { Button } from "bootstrap";
+import { useNavigate } from "react-router-dom";
 
 const Wrapper = styled.div`
   /*display: ${(props) => (props.isShow === true ? "flex" : "none")}; */
@@ -22,6 +23,7 @@ const Container = styled.div`
 `;
 
 function ResultContainer() {
+  const navigate = useNavigate();
   return (
     <Wrapper>
       <Container
@@ -35,7 +37,14 @@ function ResultContainer() {
         {/* 스탯 그래프 출력 */}
         <ChartContainer />
         <button className="button">공유하기</button>
-        <button className="button">다시하기</button>
+        <button
+          className="button"
+          onClick={() => {
+            navigate("/");
+          }}
+        >
+          다시하기
+        </button>
       </Container>
     </Wrapper>
   );

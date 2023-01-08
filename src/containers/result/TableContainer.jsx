@@ -27,6 +27,27 @@ function TableContainer() {
     gender = "여자";
   }
 
+  var arr = [
+    sessionStorage.getItem("eat"),
+    sessionStorage.getItem("life"),
+    sessionStorage.getItem("safe"),
+    sessionStorage.getItem("drunk"),
+    sessionStorage.getItem("internet"),
+  ];
+
+  var grades = [];
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] >= 89) {
+      grades[i] = 1;
+    } else if (arr[i] >= 60) {
+      grades[i] = 2;
+    } else if (arr[i] >= 23) {
+      grades[i] = 3;
+    } else {
+      grades[i] = 4;
+    }
+  }
+
   return (
     <div
       style={{
@@ -52,7 +73,6 @@ function TableContainer() {
             <th colSpan={2}>성명</th>
             <th colSpan={2}>교육과정</th>
             <th>성별</th>
-            {/*<th>출신고교</th>*/}
           </tr>
         </thead>
         <tbody>
@@ -61,7 +81,6 @@ function TableContainer() {
             <td colSpan={2}>{name}</td>
             <td colSpan={2}>{school}</td>
             <td>{gender}</td>
-            {/*<td>남성여자고등학교</td>*/}
           </tr>
           <tr>
             <th>구분</th>
@@ -72,28 +91,18 @@ function TableContainer() {
             <td style={{ fontSize: "13px" }}>인터넷 영역</td>
           </tr>
           <tr>
-            <th>표준점수</th>
-            <td>131</td>
-            <td>131</td>
-            <td>22</td>
-            <td>55</td>
-            <td>65</td>
-          </tr>
-          <tr>
             <th>백분위</th>
-            <td>99</td>
-            <td>78</td>
-            <td>124</td>
-            <td>124</td>
-            <td>55</td>
+            <td>{parseInt(sessionStorage.getItem("eat"))}</td>
+            <td>{parseInt(sessionStorage.getItem("life"))}</td>
+            <td>{parseInt(sessionStorage.getItem("safe"))}</td>
+            <td>{parseInt(sessionStorage.getItem("drunk"))}</td>
+            <td>{parseInt(sessionStorage.getItem("internet"))}</td>
           </tr>
           <tr>
             <th>등급</th>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
+            {grades.map((grade) => {
+              return <td>{grade}</td>;
+            })}
           </tr>
         </tbody>
       </Table>
