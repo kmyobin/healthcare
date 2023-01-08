@@ -154,6 +154,14 @@ function QNAConatiner(props) {
           >
             {questionNum + 1}. {Parser(contents[questionNum].q)}
           </div>
+          <img
+            src={contents[questionNum].image}
+            alt=""
+            style={{
+              width: "80%",
+              maxHeight: "300px",
+            }}
+          />
           <br /> <br />
           {contents[questionNum].answers.map((answer, i) => (
             <button

@@ -10,7 +10,8 @@ const questionBoxLife =[
       {
         text: "② 안 한다.",
       },
-    ]
+    ],
+    image:"https://images.unsplash.com/photo-1608245449230-4ac19066d2d0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
   },
   {
     t: "하루 6시간 이내",
@@ -23,7 +24,8 @@ const questionBoxLife =[
       {
         text: "② 그렇지 않다.",
       },
-    ]
+    ],
+    image:"https://images.unsplash.com/photo-1515894203077-9cd36032142f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
   },
   {
     t: "무기력과 우울 비율",
@@ -36,7 +38,8 @@ const questionBoxLife =[
       {
         text: "② 없다.",
       },
-    ]
+    ],
+    image:"https://images.unsplash.com/photo-1638274749450-30c893afe3d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
   },
   {
     t: "수업 적응 어려움(수업시간 혼남)",
@@ -50,6 +53,7 @@ const questionBoxLife =[
         text: "② 힘들다.",
       },
     ]
+    ,image:"https://images.unsplash.com/photo-1446511437394-36cdff3ae1b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
   },
 ]
 
