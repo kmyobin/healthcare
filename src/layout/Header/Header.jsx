@@ -28,11 +28,15 @@ function Header(props) {
           <div className={styles.box3}>
             <div style={{ height: "60%" }}>&nbsp;</div>
             <div style={{ height: "40%" }}>
-              <table>
-                <tr>
-                  <th className={styles.th}>성명</th>
-                  <th className={styles.th}>{props.name}</th>
-                </tr>
+              <table style={{ fontSize: "0.73rem" }}>
+                <thead>
+                  <tr>
+                    <th className={styles.th}>성명</th>
+                    <th className={styles.th}>{props.name}</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+                <tfoot></tfoot>
               </table>
             </div>
           </div>

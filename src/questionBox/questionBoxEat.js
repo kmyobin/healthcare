@@ -2,7 +2,7 @@ const questionBoxEat =[
   {
     t: "주1회 이상 라면 섭취율",
     q: "주 1회 이상 라면을 먹습니까? [2점]",
-    pm: -2,
+    pm: -1,
     answers:[
       {
         text: "① 먹는다.",        
@@ -41,7 +41,7 @@ const questionBoxEat =[
   {
     t: "채소 매일 섭취율",
     q: "채소를 매일 먹습니까? [3점]",
-    pm: 3,
+    pm: 1,
     answers:[
       {
         text: "① 먹는다.",        
@@ -54,7 +54,7 @@ const questionBoxEat =[
   {
     t: "아침식사 결식률",
     q: "아침 식사를 합니까? [3점]",
-    pm : 3,
+    pm : 1,
     answers:[
       {
         text: "① 먹는다.",        

@@ -17,6 +17,8 @@ function EatPage() {
           next="/life"
           questionNum={contents.length}
           contents={contents}
+          period="eat"
+          time={1}
         />
       </LayoutEat>
     </motion.div>

@@ -2,7 +2,7 @@ const questionBoxSafe =[
   {
     t: "손씻기 실천율",
     q: "손을 자주 씻습니까? [2점]",
-    pm: 2,
+    pm: 1,
     answers:[
       {
         text: "① 씻는다.",        
@@ -15,7 +15,7 @@ const questionBoxSafe =[
   {
     t: "하루 두 번 이상 양치질 비율",
     q: "하루 두 번 이상 양치질을 합니까? [2점]",
-    pm: 2,
+    pm: 1,
     answers:[
       {
         text: "① 한다.",        
@@ -28,7 +28,7 @@ const questionBoxSafe =[
   {
     t: "안전밸트 착용율",
     q: "안전벨트 착용을 합니까? [2점]",
-    pm: 2,
+    pm: 1,
     answers:[
       {
         text: "① 한다.",        
@@ -41,7 +41,7 @@ const questionBoxSafe =[
   {
     t: "헬멧과 보호장구 이용율",
     q: "헬멧과 보호장구를 이용합니까? [2점]",
-    pm: 2,
+    pm: 1,
     answers:[
       {
         text: "① 이용한다.",        
@@ -54,7 +54,7 @@ const questionBoxSafe =[
   {
     t: "외상으로 치료받은 경험율",
     q: "외상으로 치료 받은 경험이 있습니까? [2점]",
-    pm: -2,
+    pm: -1,
     answers:[
       {
         text: "① 있다.",        

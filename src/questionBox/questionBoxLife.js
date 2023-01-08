@@ -2,7 +2,7 @@ const questionBoxLife =[
   {
     t: "주3일 이상 격렬한 신체활동 실천율",
     q: "주 3일 이상 격렬한 신체 활동을 합니까? [3점]",
-    pm: 3,
+    pm: 1,
     answers:[
       {
         text: "① 한다.",        
@@ -15,7 +15,7 @@ const questionBoxLife =[
   {
     t: "하루 6시간 이내",
     q: "하루에 6시간 이내로 수면을 취합니까? [4점]",
-    pm: 4,
+    pm: 1,
     answers:[
       {
         text: "① 그렇다.",        
@@ -28,7 +28,7 @@ const questionBoxLife =[
   {
     t: "무기력과 우울 비율",
     q: "무기력과 우울한 감정이 있습니까? [2점]",
-    pm: -2,
+    pm: -1,
     answers:[
       {
         text: "① 있다.",        
